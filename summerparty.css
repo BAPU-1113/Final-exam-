@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 20px;
+  }
+  
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  .main-section {
+    position: relative;
+    background: linear-gradient(to bottom, #333, #1a1a1a);
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: transparent;
+  }
+  
+  .cloud {
+    position: absolute;
+  }
+  
+  .cloud-right {
+    left: 900px;
+    top: -30px;
+}
+.cloud:hover {
+  transform: translateX(-100px);
+
+}
+  
+  .sun {
+    position: absolute;
+    background: yellow;
+    width: 783px;
+    height: 801px;
+    border-radius: 50%;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .content {
+    position: relative;
+    top: 200px;
+    z-index: 2;
+    color: black;
+  }
+  
+  .content h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    color: #1a73e8;
+    font-family: SummerFestival;
+  }
+  @font-face {
+    font-family: SummerFestival;
+    src: url(./SummerFestival.woff);
+  }
+  
+  .content p {
+    font-size: 20px;
+  }
+  
+  .book-button {
+    background: navy;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .bus {
+    position: absolute;
+    left: 36%;
+    top: 400px;
+  }
+  
+  .bus img {
+    width: 400px;
+    top: 50px;
+  }
+  footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(2, 135, 252);
+    border-top: 1px solid rgba(119, 119, 119, 0.345);
+    position: fixed;
+    bottom: 0;
+  }
